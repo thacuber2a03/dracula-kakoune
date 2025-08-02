@@ -133,6 +133,68 @@ evaluate-commands %sh{
 	set-face global WrapMarker         rgb:${non_text}   # Kakoune ⇒ add-highlighter -override global/wrap wrap -marker '↪'
 
 	# Tree-sitter highlighter faces
-	set-face global ts_error rgb:${red}
+	set-face global ts_error rgb:${red} # Error
+
+	set-face global ts_diff_plus  rgb:${green}  # DiffInserted
+	set-face global ts_diff_minus rgb:${red}    # DiffDeleted
+	set-face global ts_diff_delta rgb:${orange} # DiffChanged
+
+	set-face global ts_markup_bold            rgb:${orange}+b # MarkupBold
+	set-face global ts_markup_heading         rgb:${purple}+b # MarkupHeading
+	set-face global ts_markup_italic          rgb:${yellow}+i # MarkupItalic
+	set-face global ts_markup_list_numbered   rgb:${cyan}     # MarkupListBulletOrNumber
+	set-face global ts_markup_list_unnumbered rgb:${cyan}     # MarkupListBulletOrNumber
+	set-face global ts_markup_list_checked    rgb:${cyan}     # MarkupListBulletOrNumber
+	set-face global ts_markup_list_unchecked  rgb:${cyan}     # MarkupListBulletOrNumber
+	set-face global ts_markup_raw             rgb:${green}    # MarkupInlineCode
+	set-face global ts_markup_raw_inline      rgb:${green}    # MarkupInlineCode
+	set-face global ts_markup_link_url        rgb:${cyan}     # MarkupLinkUrl
+	set-face global ts_markup_link_uri        rgb:${cyan}     # MarkupLinkUrl
+	set-face global ts_markup_link_text       rgb:${pink}     # MarkupLinkText
+	set-face global ts_markup_quote           rgb:${yellow}+i # MarkupLinkText
+	set-face global ts_markup_raw_block       rgb:${orange}   # MarkupCodeBlockWithoutSyntax
+	# set-face global ts_markup_heading_marker  rgb:${comment}  # MarkupHorizontalRule
+
+	set-face global ts_variable_builtin rgb:${purple}+i # InstanceReservedWords
+
+	set-face global ts_comment rgb:${comment} # Comment
+
+	set-face global ts_constant                  rgb:${purple} # Constant
+	set-face global ts_constant_character_escape rgb:${pink}   # ConstantEscapeSequences
+
+	set-face global ts_tag       rgb:${pink} # HtmlTags
+	set-face global ts_tag_error rgb:${red}  # Error
+
+	set-face global ts_function           rgb:${green}    # FunctionNames
+	set-face global ts_variable_parameter rgb:${orange}+i # FunctionParameters
+	set-face global ts_attribute          rgb:${green}+i  # Decorators
+
+	set-face global ts_keyword          rgb:${pink} # Keyword
+	set-face global ts_keyword_operator rgb:${pink} # KeywordNew
+
+	set-face global ts_function_special         rgb:${purple} # BuiltInMagicMethodsOrConstants
+	set-face global ts_function_builtin         rgb:${cyan}   # BuiltInFunctions
+	set-face global ts_type_builtin             rgb:${cyan}+i # Support
+	set-face global ts_variable_builtin         rgb:${cyan}+i # Support
+	set-face global ts_constant_builtin_boolean rgb:${cyan}+i # Support
+
+	set-face global ts_punctuation_special rgb:${pink}       # SeparatorsReferencesOrAccesors
+	set-face global ts_punctuation_bracket rgb:${foreground} # BracketsParensBraces
+
+	set-face global ts_keyword_storage          rgb:${pink}     # Storage
+	set-face global ts_type                     rgb:${cyan}+i   # Types
+	set-face global ts_keyword_storage_modifier rgb:${pink}     # Modifiers
+	set-face global ts_keyword_storage_type     rgb:${orange}+i # GenericTemplatesAndMappedDeclarations
+
+	set-face global ts_string        rgb:${yellow} # String
+	set-face global ts_string_regexp rgb:${red}    # StringRegExp
+
+	set-face global ts_variable rgb:${foreground} # Variable
+	set-face global ts_property rgb:${foreground} # ObjectKeys
+
+	# Tree-sitter faces not listed in the spec
+
+	set-face global ts_conceal rgb:${foreground}
+
 	"
 }
