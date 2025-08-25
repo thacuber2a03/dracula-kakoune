@@ -153,11 +153,13 @@ evaluate-commands %sh{
 	set-face global ts_markup_link_text       rgb:${pink}     # MarkupLinkText
 	set-face global ts_markup_quote           rgb:${yellow}+i # MarkupLinkText
 	set-face global ts_markup_raw_block       rgb:${orange}   # MarkupCodeBlockWithoutSyntax
-	# set-face global ts_markup_heading_marker  rgb:${comment}  # MarkupHorizontalRule
+	set-face global ts_markup_heading_marker  rgb:${purple}+b # MarkupHorizontalRule
 
 	set-face global ts_variable_builtin rgb:${purple}+i # InstanceReservedWords
 
-	set-face global ts_comment rgb:${comment} # Comment
+	set-face global ts_comment       rgb:${comment} # Comment
+	set-face global ts_comment_line  rgb:${comment} # Comment
+	set-face global ts_comment_block rgb:${comment} # Comment
 
 	set-face global ts_constant                  rgb:${purple} # Constant
 	set-face global ts_constant_character_escape rgb:${pink}   # ConstantEscapeSequences
@@ -170,7 +172,24 @@ evaluate-commands %sh{
 	set-face global ts_attribute          rgb:${green}+i  # Decorators
 
 	set-face global ts_keyword          rgb:${pink} # Keyword
-	set-face global ts_keyword_operator rgb:${pink} # KeywordNew
+    set-face global ts_keyword_control              rgb:${pink} # Keyword
+    set-face global ts_keyword_conditional          rgb:${pink} # Keyword
+    set-face global ts_keyword_control_conditional  rgb:${pink} # Keyword
+    set-face global ts_keyword_control_directive    rgb:${pink} # Keyword
+    set-face global ts_keyword_control_import       rgb:${pink} # Keyword
+    set-face global ts_keyword_control_repeat       rgb:${pink} # Keyword
+    set-face global ts_keyword_control_return       rgb:${pink} # Keyword
+    set-face global ts_keyword_control_except       rgb:${pink} # Keyword
+    set-face global ts_keyword_control_exception    rgb:${pink} # Keyword
+    set-face global ts_keyword_directive            rgb:${pink} # Keyword
+    set-face global ts_keyword_function             rgb:${pink} # Keyword
+    set-face global ts_keyword_special              rgb:${pink} # Keyword
+    set-face global ts_keyword_storage              rgb:${pink} # Keyword
+    set-face global ts_keyword_storage_modifier     rgb:${pink} # Keyword
+    set-face global ts_keyword_storage_modifier_mut rgb:${pink} # Keyword
+    set-face global ts_keyword_storage_modifier_ref rgb:${pink} # Keyword
+    set-face global ts_keyword_storage_type         rgb:${pink} # Keyword
+	set-face global ts_keyword_operator             rgb:${pink} # KeywordNew
 
 	set-face global ts_function_special         rgb:${purple} # BuiltInMagicMethodsOrConstants
 	set-face global ts_function_builtin         rgb:${cyan}   # BuiltInFunctions
